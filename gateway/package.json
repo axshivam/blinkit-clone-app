@@ -1,0 +1,19 @@
+{
+  "name": "gateway",
+  "version": "1.0.0",
+  "description": "gateway service",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/axshivam/blinkit-clone-app.git"
+  },
+  "author": "Shiv Sharma",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/axshivam/blinkit-clone-app/issues"
+  },
+  "homepage": "https://github.com/axshivam/blinkit-clone-app#readme"
+}

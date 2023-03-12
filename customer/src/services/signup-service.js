@@ -1,5 +1,5 @@
 const AccountUtils = require('../utils');
-const { AddressModel, AccountModel } = require('../database/models');
+const { AccountModel } = require('../database/models');
 
 class SignupService {
 

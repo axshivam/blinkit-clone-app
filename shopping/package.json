@@ -4,7 +4,7 @@
   "description": "shopping service",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon index.js"
   },
   "repository": {
     "type": "git",
@@ -19,5 +19,12 @@
   "bugs": {
     "url": "https://github.com/axshivam/blinkit-clone-app/issues"
   },
-  "homepage": "https://github.com/axshivam/blinkit-clone-app#readme"
+  "homepage": "https://github.com/axshivam/blinkit-clone-app#readme",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.21"
+  }
 }

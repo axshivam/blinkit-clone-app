@@ -32,7 +32,6 @@ class LoginService {
         return "wrong password";
     }
 
-    console.log(generatedPassword);
   }
 }
 

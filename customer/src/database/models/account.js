@@ -22,7 +22,10 @@ const accountSchema = schema({
     salt: {
         type: String,
         required: true,
-    }
+    },
+    address: [
+        { type: schema.Types.ObjectId, ref: 'address', require: true}
+    ],
 });
 
 module.exports = mongoose.model('account', accountSchema);

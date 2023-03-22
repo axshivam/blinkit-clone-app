@@ -31,8 +31,26 @@ class LoginService {
     } else {
         return "wrong password";
     }
-
   }
+
+  async Profile({ email }) {
+    const account = await AccountModel.findOne({ email: email });
+
+    // populate
+
+    console.log('Account -> ', account);
+
+    if(account) {
+      return {
+        name: account.name,
+        email: account.email,
+        username: account.username
+      }
+    } else {
+      return "Account not found";
+    }
+  }
+
 }
 
 module.exports = LoginService;

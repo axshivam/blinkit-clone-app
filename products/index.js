@@ -9,11 +9,7 @@ const port = process.env.PORT | 4002;
 // middlewares
 app.use(express.json());
 
-app.use('/', (req, res) => {
-    return res.json({
-        message: 'hello from the products service'
-    });
-});
+app.use('/api', require('./src/api/index'));
 
 app.listen(port, (err) => {
     if(err) {

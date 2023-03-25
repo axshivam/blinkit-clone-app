@@ -4,7 +4,7 @@ const mongoose = require("mongoose");
 
 exports.connet = () => {
   mongoose
-    .connect(MONGODB_URL, {
+    .connect(process.env.MONGODB_URL, {
       useNewUrlParser: true,
       useUnifiedTopology: true,
     })
